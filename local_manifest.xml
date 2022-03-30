@@ -24,4 +24,5 @@
  <project path="hardware/samsung_slsi/libbt" name="android_hardware_samsung_slsi_libbt" remote="LineageOS" revision="lineage-19.0" clone-depth="1" />
  <project path="hardware/samsung_slsi/scsc_wifibt/wifi_hal" name="android_hardware_samsung_slsi_scsc_wifibt_wifi_hal" remote="LineageOS" revision="lineage-19.0" clone-depth="1" />
  <project path="hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib" name="android_hardware_samsung_slsi_scsc_wifibt_wpa_supplicant_lib" remote="LineageOS" revision="lineage-19.0" clone-depth="1" />
+ <project path="system/security" name="android_system_security" remote="victor" revision="lineage-19.1" clone-depth="1" />
 </manifest>
