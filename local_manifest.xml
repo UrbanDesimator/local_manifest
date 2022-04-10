@@ -21,8 +21,10 @@
  <project path="vendor/samsung/a505fn" name="android_vendor_samsung_a505fn" remote="GalaxyA50" revision="android-12.0" clone-depth="1" />
  
  <!-- Dependencies -->
+ <remove-project name="platform/system/security" />
  <project path="device/samsung_slsi/sepolicy" name="android_device_samsung_slsi_sepolicy" remote="LineageOS1" revision="lineage-19.0" clone-depth="1" />
  <project path="hardware/samsung_slsi/libbt" name="android_hardware_samsung_slsi_libbt" remote="LineageOS1" revision="lineage-19.0" clone-depth="1" />
  <project path="hardware/samsung_slsi/scsc_wifibt/wifi_hal" name="android_hardware_samsung_slsi_scsc_wifibt_wifi_hal" remote="LineageOS1" revision="lineage-19.0" clone-depth="1" />
  <project path="hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib" name="android_hardware_samsung_slsi_scsc_wifibt_wpa_supplicant_lib" remote="LineageOS1" revision="lineage-19.0" clone-depth="1" />
+ <project path="system/security" name="android_system_security" remote="victor" revision="lineage-19.1" clone-depth="1" />
 </manifest>
