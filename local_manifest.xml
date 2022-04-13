@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
- <!-- Remotes -->
- <remote name="GalaxyA50" fetch="https://github.com/Galaxya50" />
- <remote name="LineageOS1" fetch="https://github.com/LineageOS" />
- <remote name="victor" fetch="https://github.com/victor4cris" />
- <remote name="data" fetch="https://github.com/DT-Archive-Samsung-A50" />
- 
- <!-- Common Device Tree repos -->
- <project path="device/samsung/a50-common" name="a50-common" remote="data" revision="experimental-19.1" clone-depth="1" />
- <project path="kernel/samsung/a50-common" name="android_kernel_samsung_a50-common" remote="victor" revision="master" clone-depth="1" />
- <project path="vendor/samsung/a50-common" name="android_vendor_samsung_a50-common" remote="GalaxyA50" revision="android-12.0" clone-depth="1" />
- <project path="hardware/samsung" name="android_hardware_samsung" remote="GalaxyA50" revision="android-12.0" />
- 
- <!-- Non-NFC -->
- <project path="device/samsung/a505f" name="android_device_samsung_a505f" remote="GalaxyA50" revision="lineage-19.0" clone-depth="1" />
- <project path="vendor/samsung/a505f" name="android_vendor_samsung_a505f" remote="GalaxyA50" revision="android-12.0" clone-depth="1" />
- 
- <!-- NFC -->
- <project path="device/samsung/a505fn" name="android_device_samsung_a505fn" remote="GalaxyA50" revision="lineage-19.0" clone-depth="1" />
- <project path="vendor/samsung/a505fn" name="android_vendor_samsung_a505fn" remote="GalaxyA50" revision="android-12.0" clone-depth="1" />
- 
- <!-- Dependencies -->
- <remove-project name="LineageOS/android_system_security" />
- <project path="device/samsung_slsi/sepolicy" name="android_device_samsung_slsi_sepolicy" remote="LineageOS1" revision="lineage-19.0" clone-depth="1" />
- <project path="hardware/samsung_slsi/libbt" name="android_hardware_samsung_slsi_libbt" remote="LineageOS1" revision="lineage-19.0" clone-depth="1" />
- <project path="hardware/samsung_slsi/scsc_wifibt/wifi_hal" name="android_hardware_samsung_slsi_scsc_wifibt_wifi_hal" remote="LineageOS1" revision="lineage-19.0" clone-depth="1" />
- <project path="hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib" name="android_hardware_samsung_slsi_scsc_wifibt_wpa_supplicant_lib" remote="LineageOS1" revision="lineage-19.0" clone-depth="1" />
- <project path="system/security" name="android_system_security" remote="victor" revision="lineage-19.1" clone-depth="1" />
+
+    <!--remotes -->
+    <remote name="Orel6505"   fetch="https://github.com/Orel6505" />
+    <remote name="Linux4"     fetch="https://github.com/Linux4" />           
+    <remote name="LineageOS"  fetch="https://github.com/LineageOS" />
+    <remote name="TheMuppets" fetch="https://github.com/TheMuppets" />
+    <remote name="PE-devices" fetch="https://github.com/PixelExperience-Devices" />
+    <remote name="PE-blobs"   fetch="https://gitlab.pixelexperience.org/android/vendor-blobs" />
+
+    <!--Device Tree - you can track from LineageOS if you want-->
+    <project name="device_samsung_beyond0lte"        path="device/samsung/beyond0lte"        remote="PE-devices"  revision="twelve" />
+	<project name="device_samsung_beyond1lte"        path="device/samsung/beyond1lte"        remote="PE-devices"  revision="twelve" />
+	<project name="device_samsung_beyond2lte"        path="device/samsung/beyond2lte"        remote="PE-devices"  revision="twelve" />
+	<project name="device_samsung_beyondx"           path="device/samsung/beyondx"           remote="PE-devices"  revision="twelve" />
+	<project name="device_samsung_d1"                path="device/samsung/d1"                remote="PE-devices"  revision="twelve" />
+	<project name="device_samsung_d2s"               path="device/samsung/d2s"               remote="PE-devices"  revision="twelve" />
+	<project name="device_samsung_d2x"               path="device/samsung/d2x"               remote="PE-devices"  revision="twelve" />
+	<project name="device_samsung_exynos9820-common" path="device/samsung/exynos9820-common" remote="PE-devices"  revision="twelve" />
+	
+	<!--Vendor Tree - You can track from TheMuppets if you want-->
+    <project name="vendor_samsung"                   path="vendor/samsung"                   remote="PE-blobs"    revision="twelve" clone-depth="1" />
+    
+    <!--Kernel Tree - You can track from The LineageOS if you want-->
+    <project name="kernel_samsung_exynos9820"        path="kernel/samsung/exynos9820"        remote="PE-devices"  revision="twelve" clone-depth="1" />
+    
+    <!-- Dependenciens -->
+    <project name="android_device_samsung_slsi_sepolicy"    path="device/samsung_slsi/sepolicy"      remote="LineageOS"   revision="lineage-19.1" />
+    <project name="android_hardware_samsung"                path="hardware/samsung"                  remote="LineageOS"   revision="lineage-19.1" />
+	
 </manifest>
