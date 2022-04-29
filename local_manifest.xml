@@ -8,6 +8,7 @@
     <remote name="TheMuppets" fetch="https://github.com/TheMuppets" />
     <remote name="PE-devices" fetch="https://github.com/PixelExperience-Devices" />
     <remote name="PE-blobs"   fetch="https://gitlab.pixelexperience.org/android/vendor-blobs" />
+    <remote name="PE".        fetch="https://github.com/PixelExperience" />
 
     <!--Device Tree - you can track from LineageOS if you want-->
     <project name="device_samsung_beyond0lte"        path="device/samsung/beyond0lte"        remote="PE-devices"  revision="twelve" />
@@ -27,6 +28,6 @@
     
     <!-- Dependenciens -->
     <project name="android_device_samsung_slsi_sepolicy"    path="device/samsung_slsi/sepolicy"      remote="LineageOS"   revision="lineage-19.1" />
-    <project name="android_hardware_samsung"                path="hardware/samsung"                  remote="LineageOS"   revision="lineage-19.1" />
+    <project name="hardware_samsung"                path="hardware/samsung"                  remote="PE"   revision="twelve" />
 	
 </manifest>
