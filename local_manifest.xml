@@ -4,21 +4,21 @@
     <!--remotes -->
     <remote name="Orel6505"   fetch="https://github.com/Orel6505" />
     <remote name="Linux4"     fetch="https://github.com/Linux4" />           
-    <remote name="LineageOS"  fetch="https://github.com/LineageOS" />
+    <remote name="LOS"  fetch="https://github.com/LineageOS" />
     <remote name="TheMuppets" fetch="https://github.com/TheMuppets" />
     <remote name="PE-devices" fetch="https://github.com/PixelExperience-Devices" />
     <remote name="PE-blobs"   fetch="https://gitlab.pixelexperience.org/android/vendor-blobs" />
     <remote name="PE"         fetch="https://github.com/PixelExperience" />
 
     <!--Device Tree - you can track from LineageOS if you want-->
-    <project name="device_samsung_beyond0lte"        path="device/samsung/beyond0lte"        remote="PE-devices"  revision="twelve" />
-	<project name="device_samsung_beyond1lte"        path="device/samsung/beyond1lte"        remote="PE-devices"  revision="twelve" />
-	<project name="device_samsung_beyond2lte"        path="device/samsung/beyond2lte"        remote="PE-devices"  revision="twelve" />
-	<project name="device_samsung_beyondx"           path="device/samsung/beyondx"           remote="PE-devices"  revision="twelve" />
-	<project name="device_samsung_d1"                path="device/samsung/d1"                remote="PE-devices"  revision="twelve" />
-	<project name="device_samsung_d2s"               path="device/samsung/d2s"               remote="PE-devices"  revision="twelve" />
-	<project name="device_samsung_d2x"               path="device/samsung/d2x"               remote="PE-devices"  revision="twelve" />
-	<project name="device_samsung_exynos9820-common" path="device/samsung/exynos9820-common" remote="PE-devices"  revision="twelve" />
+        <project name="android_device_samsung_beyond0lte"        path="device/samsung/beyond0lte"        remote="LOS"  revision="lineage-19.1" />
+	<project name="android_device_samsung_beyond1lte"        path="device/samsung/beyond1lte"        remote="LOS"  revision="lineage-19.1" />
+	<project name="android_device_samsung_beyond2lte"        path="device/samsung/beyond2lte"        remote="LOS"  revision="lineage-19.1" />
+	<project name="android_device_samsung_beyondx"           path="device/samsung/beyondx"           remote="LOS"  revision="lineage-19.1" />
+	<project name="android_device_samsung_d1"                path="device/samsung/d1"                remote="LOS"  revision="lineage-19.1" />
+	<project name="android_device_samsung_d2s"               path="device/samsung/d2s"               remote="LOS"  revision="lineage-19.1" />
+	<project name="android_device_samsung_d2x"               path="device/samsung/d2x"               remote="LOS"  revision="lineage-19.1" />
+	<project name="android_device_samsung_exynos9820-common" path="device/samsung/exynos9820-common" remote="LOS"  revision="lineage-19.1" />
 	
 	<!--Vendor Tree - You can track from TheMuppets if you want-->
     <project name="vendor_samsung"                   path="vendor/samsung"                   remote="PE-blobs"    revision="twelve" clone-depth="1" />
@@ -27,7 +27,7 @@
     <project name="kernel_samsung_exynos9820"        path="kernel/samsung/exynos9820"        remote="PE-devices"  revision="twelve" clone-depth="1" />
     
     <!-- Dependenciens -->
-    <project name="android_device_samsung_slsi_sepolicy"    path="device/samsung_slsi/sepolicy"      remote="LineageOS"   revision="lineage-19.1" />
+    <project name="android_device_samsung_slsi_sepolicy"    path="device/samsung_slsi/sepolicy"      remote="LOS"   revision="lineage-19.1" />
     <project name="hardware_samsung"                path="hardware/samsung"                  remote="PE"   revision="twelve" />
 	
 </manifest>
