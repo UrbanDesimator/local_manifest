@@ -9,16 +9,17 @@
     <remote name="PE-devices" fetch="https://github.com/PixelExperience-Devices" />
     <remote name="PE-blobs"   fetch="https://gitlab.pixelexperience.org/android/vendor-blobs" />
     <remote name="PE"         fetch="https://github.com/PixelExperience" />
+    <remote name="vic"        fetch="https://gitHub.com/victor4cris" />
 
     <!--Device Tree - you can track from LineageOS if you want-->
-        <project name="android_device_samsung_beyond0lte"        path="device/samsung/beyond0lte"        remote="LOS"  revision="lineage-19.1" />
-	<project name="android_device_samsung_beyond1lte"        path="device/samsung/beyond1lte"        remote="LOS"  revision="lineage-19.1" />
-	<project name="android_device_samsung_beyond2lte"        path="device/samsung/beyond2lte"        remote="LOS"  revision="lineage-19.1" />
-	<project name="android_device_samsung_beyondx"           path="device/samsung/beyondx"           remote="LOS"  revision="lineage-19.1" />
-	<project name="android_device_samsung_d1"                path="device/samsung/d1"                remote="LOS"  revision="lineage-19.1" />
-	<project name="android_device_samsung_d2s"               path="device/samsung/d2s"               remote="LOS"  revision="lineage-19.1" />
-	<project name="android_device_samsung_d2x"               path="device/samsung/d2x"               remote="LOS"  revision="lineage-19.1" />
-	<project name="android_device_samsung_exynos9820-common" path="device/samsung/exynos9820-common" remote="LOS"  revision="lineage-19.1" />
+        <project name="android_device_samsung_beyond0lte"        path="device/samsung/beyond0lte"        remote="vic"  revision="lineage-19.1" />
+	<project name="android_device_samsung_beyond1lte"        path="device/samsung/beyond1lte"        remote="vic"  revision="lineage-19.1" />
+	<project name="android_device_samsung_beyond2lte"        path="device/samsung/beyond2lte"        remote="vic"  revision="lineage-19.1" />
+	<project name="android_device_samsung_beyondx"           path="device/samsung/beyondx"           remote="vic"  revision="lineage-19.1" />
+	<project name="android_device_samsung_d1"                path="device/samsung/d1"                remote="vic"  revision="lineage-19.1" />
+	<project name="android_device_samsung_d2s"               path="device/samsung/d2s"               remote="vic"  revision="lineage-19.1" />
+	<project name="android_device_samsung_d2x"               path="device/samsung/d2x"               remote="vic"  revision="lineage-19.1" />
+	<project name="android_device_samsung_exynos9820-common" path="device/samsung/exynos9820-common" remote="vic"  revision="lineage-19.1" />
 	
 	<!--Vendor Tree - You can track from TheMuppets if you want-->
     <project name="vendor_samsung"                   path="vendor/samsung"                   remote="PE-blobs"    revision="twelve" clone-depth="1" />
