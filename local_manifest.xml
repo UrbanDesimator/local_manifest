@@ -13,7 +13,7 @@
 
     <!--Device Tree - you can track from LineageOS if you want-->
 
-	<project name="device_samsung_exynos9820" path="device/samsung" remote="vic"  revision="lineage-snow" />
+	<project name="device_samsung_exynos9820" path="device/samsung" remote="vic"  revision="snow" />
 	
 	<!--Vendor Tree - You can track from TheMuppets if you want-->
     <project name="vendor_samsung"                   path="vendor/samsung"                   remote="PE-blobs"    revision="twelve" clone-depth="1" />
