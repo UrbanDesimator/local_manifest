@@ -11,10 +11,17 @@
     <remote name="PE"         fetch="https://github.com/PixelExperience" />
     <remote name="vic"        fetch="https://gitHub.com/no-leaks-inside" />
 
-    <!--Device Tree - you can track from LineageOS if you want-->
+    <!--Device Tree - you can track from vic (Personal source) if you want-->
 
-	<project name="device_samsung_exynos9820" path="device/samsung" remote="vic"  revision="snow" />
-	
+        <project name="device_samsung_exynos9820-common" path="device/samsung/exynos9820-common" remote="vic"  revision="snow" />
+	<project name="device_samsung_beyond0lte" path="device/samsung/beyond0lte" remote="vic"  revision="snow" />
+        <project name="device_samsung_beyond1lte" path="device/samsung/beyond1lte" remote="vic"  revision="snow" />
+	<project name="device_samsung_beyond2lte" path="device/samsung/beyond2lte" remote="vic"  revision="snow" />
+        <project name="device_samsung_beyondx" path="device/samsung/beyondx" remote="vic"  revision="snow" />
+        <project name="device_samsung_d1" path="device/samsung/d1" remote="vic"  revision="snow" />
+        <project name="device_samsung_d2s" path="device/samsung/d2s" remote="vic"  revision="snow" />
+        <project name="device_samsung_d2x" path="device/samsung/d2x" remote="vic"  revision="snow" />
+
 	<!--Vendor Tree - You can track from TheMuppets if you want-->
     <project name="vendor_samsung"                   path="vendor/samsung"                   remote="PE-blobs"    revision="twelve" clone-depth="1" />
     
